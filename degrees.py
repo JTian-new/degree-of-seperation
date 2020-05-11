@@ -91,7 +91,8 @@ def shortest_path(source, target):
 
     If no possible path, returns None.
     """
-
+    # TODO
+    
     # Initialize frontier to just the source actor
     start = Node(state=source, parent=None, action=None)
     frontier = QueueFrontier()
@@ -126,10 +127,6 @@ def shortest_path(source, target):
             if not frontier.contains_state(state) and state not in explored:
                 
                 frontier.add(child)  
-
-
-
-
 
 def person_id_for_name(name):
     """
